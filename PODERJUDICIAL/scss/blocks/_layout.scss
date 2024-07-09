@@ -32,7 +32,7 @@
   position: relative;
   > * {
     flex: 1;
-    margin: ($poderjudicial-grid-gutter * .5) 0;
+    margin: ($ecotarcoles-grid-gutter * .5) 0;
   }
 
   @include media-breakpoint-down(lg) {
@@ -59,41 +59,41 @@
     margin-bottom: 0;
 
     &:first-child {
-      margin-top: $poderjudicial-grid-gutter;
+      margin-top: $ecotarcoles-grid-gutter;
     }
   }
 
   > * + * {
-    margin-top: $poderjudicial-grid-gutter;
+    margin-top: $ecotarcoles-grid-gutter;
   }
 }
 
 .container-sidebar-left,
 .container-sidebar-right {
   flex: 0 0 auto;
-  width: calc(100% - #{$poderjudicial-grid-gutter});
+  width: calc(100% - #{$ecotarcoles-grid-gutter});
   order: 1;
 
   @include media-breakpoint-up(md) {
-    width: calc(25% - #{$poderjudicial-grid-gutter});
+    width: calc(25% - #{$ecotarcoles-grid-gutter});
     order: 0;
   }
 }
 
 .container-sidebar-left {
   .sidebar-left:first-child {
-    margin-top: $poderjudicial-grid-gutter;
+    margin-top: $ecotarcoles-grid-gutter;
   }
   .sidebar-left:last-child {
-    margin-bottom: $poderjudicial-grid-gutter;
+    margin-bottom: $ecotarcoles-grid-gutter;
   }
 }
 .container-sidebar-right {
   .sidebar-right:first-child {
-    margin-top: $poderjudicial-grid-gutter;
+    margin-top: $ecotarcoles-grid-gutter;
   }
   .sidebar-right:last-child {
-    margin-bottom: $poderjudicial-grid-gutter;
+    margin-bottom: $ecotarcoles-grid-gutter;
   }
 }
 

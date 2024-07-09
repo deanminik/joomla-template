@@ -29,8 +29,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--poderjudicial-font-family-headings, $font-family-sans-serif);
-  font-weight: var(--poderjudicial-font-weight-headings, $font-weight-bold);
+  font-family: var(--ecotarcoles-font-family-headings, $font-family-sans-serif);
+  font-weight: var(--ecotarcoles-font-weight-headings, $font-weight-bold);
 }
 
 .display-1 {
@@ -54,7 +54,7 @@ h6 {
 }
 
 a {
-  color: var(--poderjudicial-color-link);
+  color: var(--ecotarcoles-color-link);
 
   &:not([class]) {
     text-decoration: underline;
@@ -62,29 +62,29 @@ a {
 
   &:hover,
   &:focus {
-    color: var(--poderjudicial-color-hover);
+    color: var(--ecotarcoles-color-hover);
   }
 
   &.navbar-brand {
-    color: var(--poderjudicial-color-brand);
+    color: var(--ecotarcoles-color-brand);
   }
 }
 
 .btn-primary {
-  background-color: var(--poderjudicial-color-primary);
-  border-color: var(--poderjudicial-color-primary);
+  background-color: var(--ecotarcoles-color-primary);
+  border-color: var(--ecotarcoles-color-primary);
 
   &:hover,
   &:focus {
-    background-color: var(--poderjudicial-color-hover);
-    border-color: var(--poderjudicial-color-hover);
+    background-color: var(--ecotarcoles-color-hover);
+    border-color: var(--ecotarcoles-color-hover);
   }
 }
 
 .btn-group {
-  margin-bottom: $poderjudicial-grid-gutter;
+  margin-bottom: $ecotarcoles-grid-gutter;
   > input {
-    padding: $poderjudicial-grid-gutter * .5;
+    padding: $ecotarcoles-grid-gutter * .5;
     border: 1px solid $gray-400;
     @include border-start-radius($border-radius);
     @include border-end-radius(0);
@@ -109,7 +109,7 @@ a {
 }
 
 .com-content-category__pagination {
-  margin-bottom: $poderjudicial-grid-gutter;
+  margin-bottom: $ecotarcoles-grid-gutter;
 }
 
 small,
@@ -128,7 +128,7 @@ dd {
 }
 
 th dd {
-  font-weight: var(--poderjudicial-font-weight-normal, $font-weight-normal);
+  font-weight: var(--ecotarcoles-font-weight-normal, $font-weight-normal);
 }
 
 .com-contact__thumbnail {
@@ -148,7 +148,7 @@ th dd {
     dd {
       grid-column-start: 2;
       grid-column-end: 3;
-      padding: 0 0 0 $poderjudicial-grid-gutter;
+      padding: 0 0 0 $ecotarcoles-grid-gutter;
       margin-bottom: 0;
     }
   }
@@ -158,7 +158,7 @@ th dd {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, auto);
     grid-gap: 1rem;
-    margin-bottom: $poderjudicial-grid-gutter;
+    margin-bottom: $ecotarcoles-grid-gutter;
 
     h3 {
       grid-column: 1 / 5;
@@ -167,7 +167,7 @@ th dd {
     .com-contact__thumbnail {
       grid-column: 3 / 5;
       grid-row: 2 / 5;
-      margin-bottom: $poderjudicial-grid-gutter;
+      margin-bottom: $ecotarcoles-grid-gutter;
       text-align: right;
     }
 
@@ -184,7 +184,7 @@ th dd {
 
   [dir="rtl"] dl.dl-horizontal {
     dd {
-      padding: 0 $poderjudicial-grid-gutter 0 0;
+      padding: 0 $ecotarcoles-grid-gutter 0 0;
     }
   }
 
@@ -196,19 +196,19 @@ th dd {
 }
 
 figure {
-  margin: 0 0 ($poderjudicial-grid-gutter*2);
+  margin: 0 0 ($ecotarcoles-grid-gutter*2);
   &.float-start {
-    margin-right: $poderjudicial-grid-gutter;
+    margin-right: $ecotarcoles-grid-gutter;
   }
   &.float-end {
-    margin-left: $poderjudicial-grid-gutter;
+    margin-left: $ecotarcoles-grid-gutter;
   }
   [dir="rtl"] &.float-start {
     margin-right: 0;
-    margin-left: $poderjudicial-grid-gutter;
+    margin-left: $ecotarcoles-grid-gutter;
   }
   [dir="rtl"] &.float-end {
-    margin-right: $poderjudicial-grid-gutter;
+    margin-right: $ecotarcoles-grid-gutter;
     margin-left: 0;
   }
 }
@@ -233,7 +233,7 @@ meter {
   .pagination {
     justify-content: space-between;
     padding: 0;
-    margin: $poderjudicial-grid-gutter 0;
+    margin: $ecotarcoles-grid-gutter 0;
 
     .next:only-child {
       margin-left: auto;
@@ -241,15 +241,15 @@ meter {
 
     [dir="rtl"] &>.next:only-child {
       margin-right: auto;
-      margin-left: $poderjudicial-grid-gutter;
+      margin-left: $ecotarcoles-grid-gutter;
     }
   }
 }
 
 .page-link {
-  color: var(--poderjudicial-color-link);
+  color: var(--ecotarcoles-color-link);
   &:hover {
-    color: var(--poderjudicial-color-link);
+    color: var(--ecotarcoles-color-link);
   }
 }
 

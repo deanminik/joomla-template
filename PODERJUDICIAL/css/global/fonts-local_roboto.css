@@ -119,8 +119,8 @@
   src: url("../../../../../vendor/roboto-fontface/fonts/roboto/Roboto-BlackItalic.woff2") format("woff2"), url("../../../../../vendor/roboto-fontface/fonts/roboto/Roboto-BlackItalic.woff") format("woff");
 }
 :root {
-  --poderjudicial-font-family-body: "Roboto", sans-serif;
-  --poderjudicial-font-family-headings: "Roboto", sans-serif;
-  --poderjudicial-font-weight-headings: 700;
-  --poderjudicial-font-weight-normal: 400;
+  --ecotarcoles-font-family-body: "Roboto", sans-serif;
+  --ecotarcoles-font-family-headings: "Roboto", sans-serif;
+  --ecotarcoles-font-weight-headings: 700;
+  --ecotarcoles-font-weight-normal: 400;
 }

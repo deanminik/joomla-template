@@ -28,16 +28,16 @@
 
 .header {
   position: relative;
-  padding: $poderjudicial-grid-gutter ($poderjudicial-grid-gutter*2);
+  padding: $ecotarcoles-grid-gutter ($ecotarcoles-grid-gutter*2);
   margin: 0;
   color: $white;
   text-align: center;
-  background-color: var(--poderjudicial-color-primary);
-  background-image: $poderjudicial-header-grad;
+  background-color: var(--ecotarcoles-color-primary);
+  background-image: $ecotarcoles-header-grad;
   border-radius: 5px 5px 0 0;
 
   [dir=rtl] & {
-    background-image: $poderjudicial-header-grad-rtl;
+    background-image: $ecotarcoles-header-grad-rtl;
   }
 }
 

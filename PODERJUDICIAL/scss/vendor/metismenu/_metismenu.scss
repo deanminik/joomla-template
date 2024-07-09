@@ -30,7 +30,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        padding: ($poderjudicial-grid-gutter * .5) $poderjudicial-grid-gutter;
+        padding: ($ecotarcoles-grid-gutter * .5) $ecotarcoles-grid-gutter;
         font-size: 1.1rem;
         line-height: 1.5;
 
@@ -106,7 +106,7 @@
       .mm-collapse {
         position: absolute;
         background-color: hsl(0, 0%, 100%);
-        box-shadow: $poderjudicial-box-shadow;
+        box-shadow: $ecotarcoles-box-shadow;
 
         &:not(.mm-show) {
           display: none;
@@ -132,9 +132,9 @@
           > ul {
             position: relative;
             top: 0;
-            flex-basis: calc(100% + #{$poderjudicial-grid-gutter});
-            margin-top: $poderjudicial-grid-gutter * .5;
-            margin-bottom: $poderjudicial-grid-gutter * -.5;
+            flex-basis: calc(100% + #{$ecotarcoles-grid-gutter});
+            margin-top: $ecotarcoles-grid-gutter * .5;
+            margin-bottom: $ecotarcoles-grid-gutter * -.5;
             background-color: hsla(0, 0%, 0%, .03);
             box-shadow: none;
           }

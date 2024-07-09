@@ -2,7 +2,7 @@
 
 /**
  * @package     Joomla.Site
- * @subpackage  Templates.poderjudicial
+ * @subpackage  Templates.ecotarcoles
  *
  * @copyright   (C) 2017 Open Source Matters, Inc. <https://www.joomla.org>
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
@@ -26,7 +26,7 @@ $wa               = $this->getWebAssetManager();
 $fullWidth = 1;
 
 // Template path
-$templatePath = 'media/templates/site/poderjudicial';
+$templatePath = 'media/templates/site/ecotarcoles';
 
 // Color Theme
 $paramsColorName = $this->params->get('colorName', 'colors_standard');
@@ -45,10 +45,10 @@ if ($paramsFontScheme) {
         $wa->registerAndUseStyle('fontscheme.current', $paramsFontScheme, [], ['media' => 'print', 'rel' => 'lazy-stylesheet', 'onload' => 'this.media=\'all\'', 'crossorigin' => 'anonymous']);
 
         if (preg_match_all('/family=([^?:]*):/i', $paramsFontScheme, $matches) > 0) {
-            $fontStyles = '--poderjudicial-font-family-body: "' . str_replace('+', ' ', $matches[1][0]) . '", sans-serif;
-			--poderjudicial-font-family-headings: "' . str_replace('+', ' ', isset($matches[1][1]) ? $matches[1][1] : $matches[1][0]) . '", sans-serif;
-			--poderjudicial-font-weight-normal: 400;
-			--poderjudicial-font-weight-headings: 700;';
+            $fontStyles = '--ecotarcoles-font-family-body: "' . str_replace('+', ' ', $matches[1][0]) . '", sans-serif;
+			--ecotarcoles-font-family-headings: "' . str_replace('+', ' ', isset($matches[1][1]) ? $matches[1][1] : $matches[1][0]) . '", sans-serif;
+			--ecotarcoles-font-weight-normal: 400;
+			--ecotarcoles-font-weight-headings: 700;';
         }
     } else {
         $wa->registerAndUseStyle('fontscheme.current', $paramsFontScheme, ['version' => 'auto'], ['media' => 'print', 'rel' => 'lazy-stylesheet', 'onload' => 'this.media=\'all\'']);
@@ -57,7 +57,7 @@ if ($paramsFontScheme) {
 }
 
 // Enable assets
-$wa->usePreset('template.poderjudicial.' . ($this->direction === 'rtl' ? 'rtl' : 'ltr'))
+$wa->usePreset('template.ecotarcoles.' . ($this->direction === 'rtl' ? 'rtl' : 'ltr'))
     ->useStyle('template.active.language')
     ->useStyle('template.offline')
     ->useStyle('template.user')
@@ -73,7 +73,7 @@ $wa->usePreset('template.poderjudicial.' . ($this->direction === 'rtl' ? 'rtl' :
 	}");
 
 // Override 'template.active' asset to set correct ltr/rtl dependency
-$wa->registerStyle('template.active', '', [], [], ['template.poderjudicial.' . ($this->direction === 'rtl' ? 'rtl' : 'ltr')]);
+$wa->registerStyle('template.active', '', [], [], ['template.ecotarcoles.' . ($this->direction === 'rtl' ? 'rtl' : 'ltr')]);
 
 // Logo file or site title param
 $sitename = htmlspecialchars($app->get('sitename'), ENT_QUOTES, 'UTF-8');

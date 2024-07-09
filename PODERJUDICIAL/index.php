@@ -2,7 +2,7 @@
 
 /**
  * @package     Joomla.Site
- * @subpackage  Templates.poderjudicial
+ * @subpackage  Templates.ecotarcoles
  *
  * @copyright   (C) 2017 Open Source Matters, Inc. <https://www.joomla.org>
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
@@ -19,6 +19,8 @@ use Joomla\CMS\Uri\Uri;
 
 $app = Factory::getApplication();
 $wa  = $this->getWebAssetManager();
+
+$path = JURI::base(true).'/templates/'.$app->getTemplate().'/';
 
 // Browsers support SVG favicons
 $this->addHeadLink(HTMLHelper::_('image', 'joomla-favicon.svg', '', [], true, 1), 'icon', 'rel', ['type' => 'image/svg+xml']);
@@ -49,7 +51,7 @@ $pageclass = $menu !== null ? $menu->getParams()->get('pageclass_sfx', '') : '';
 // Color Theme
 $paramsColorName = $this->params->get('colorName', 'colors_standard');
 $assetColorName  = 'theme.' . $paramsColorName;
-$wa->registerAndUseStyle($assetColorName, 'media/templates/site/poderjudicial/css/global/' . $paramsColorName . '.css');
+$wa->registerAndUseStyle($assetColorName, 'media/templates/site/ecotarcoles/css/global/' . $paramsColorName . '.css');
 
 // Use a font scheme if set in the template style options
 $paramsFontScheme = $this->params->get('useFontScheme', false);
@@ -63,10 +65,10 @@ if ($paramsFontScheme) {
         $wa->registerAndUseStyle('fontscheme.current', $paramsFontScheme, [], ['media' => 'print', 'rel' => 'lazy-stylesheet', 'onload' => 'this.media=\'all\'', 'crossorigin' => 'anonymous']);
 
         if (preg_match_all('/family=([^?:]*):/i', $paramsFontScheme, $matches) > 0) {
-            $fontStyles = '--poderjudicial-font-family-body: "' . str_replace('+', ' ', $matches[1][0]) . '", sans-serif;
-			--poderjudicial-font-family-headings: "' . str_replace('+', ' ', isset($matches[1][1]) ? $matches[1][1] : $matches[1][0]) . '", sans-serif;
-			--poderjudicial-font-weight-normal: 400;
-			--poderjudicial-font-weight-headings: 700;';
+            $fontStyles = '--ecotarcoles-font-family-body: "' . str_replace('+', ' ', $matches[1][0]) . '", sans-serif;
+			--ecotarcoles-font-family-headings: "' . str_replace('+', ' ', isset($matches[1][1]) ? $matches[1][1] : $matches[1][0]) . '", sans-serif;
+			--ecotarcoles-font-weight-normal: 400;
+			--ecotarcoles-font-weight-headings: 700;';
         }
     } else {
         $wa->registerAndUseStyle('fontscheme.current', $paramsFontScheme, ['version' => 'auto'], ['media' => 'print', 'rel' => 'lazy-stylesheet', 'onload' => 'this.media=\'all\'']);
@@ -75,7 +77,7 @@ if ($paramsFontScheme) {
 }
 
 // Enable assets
-$wa->usePreset('template.poderjudicial.' . ($this->direction === 'rtl' ? 'rtl' : 'ltr'))
+$wa->usePreset('template.ecotarcoles.' . ($this->direction === 'rtl' ? 'rtl' : 'ltr'))
     ->useStyle('template.active.language')
     ->useStyle('template.user')
     ->useScript('template.user')
@@ -90,15 +92,15 @@ $wa->usePreset('template.poderjudicial.' . ($this->direction === 'rtl' ? 'rtl' :
 	}");
 
 // Override 'template.active' asset to set correct ltr/rtl dependency
-$wa->registerStyle('template.active', '', [], [], ['template.poderjudicial.' . ($this->direction === 'rtl' ? 'rtl' : 'ltr')]);
+$wa->registerStyle('template.active', '', [], [], ['template.ecotarcoles.' . ($this->direction === 'rtl' ? 'rtl' : 'ltr')]);
 
 // Logo file or site title param
 if ($this->params->get('logoFile')) {
-    $logo = HTMLHelper::_('image', Uri::root(false) . htmlspecialchars($this->params->get('logoFile'), ENT_QUOTES), $sitename, ['loading' => 'eager', 'decoding' => 'async'], false, 0);
+  $logo = HTMLHelper::_('image', Uri::root(false) . htmlspecialchars($this->params->get('logoFile'), ENT_QUOTES), $this->params->get('siteTitle'), ['loading' => 'eager', 'decoding' => 'async'], false, 0);
 } elseif ($this->params->get('siteTitle')) {
-    $logo = '<span title="' . $sitename . '">' . htmlspecialchars($this->params->get('siteTitle'), ENT_COMPAT, 'UTF-8') . '</span>';
+  $logo = '<span title="' . $sitename . '">' . htmlspecialchars($this->params->get('siteTitle'), ENT_COMPAT, 'UTF-8') . '</span>';
 } else {
-    $logo = HTMLHelper::_('image', 'logo.svg', $sitename, ['class' => 'logo d-inline-block', 'loading' => 'eager', 'decoding' => 'async'], true, 0);
+  $logo = HTMLHelper::_('image', 'logo.svg', $sitename, ['class' => 'logo d-inline-block', 'loading' => 'eager', 'decoding' => 'async'], true, 0);
 }
 
 $hasClass = '';
@@ -163,6 +165,9 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
         <?php if ($this->params->get('brand', 1)) : ?>
             <div class="grid-child">
                 <div class="navbar-brand">
+                  <!-- <a class="brand-logo" target="_blank" href="https://pj.poder-judicial.go.cr/" style="margin-left: 10px;">
+                    <img loading="eager" decoding="async" src="<?php //echo $path;?>/img/logo-poder.svg" alt="Ir a la página de inicio de:">
+                  </a> -->
                     <a class="brand-logo" href="<?php echo $this->baseurl; ?>/">
                         <?php echo $logo; ?>
                     </a>
@@ -260,7 +265,7 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
     <?php endif; ?>
 
     <?php if ($this->params->get('backTop') == 1) : ?>
-        <a href="#top" id="back-top" class="back-to-top-link" aria-label="<?php echo Text::_('TPL_poderjudicial_BACKTOTOP'); ?>">
+        <a href="#top" id="back-top" class="back-to-top-link" aria-label="<?php echo Text::_('TPL_ecotarcoles_BACKTOTOP'); ?>">
             <span class="icon-arrow-up icon-fw" aria-hidden="true"></span>
         </a>
     <?php endif; ?>

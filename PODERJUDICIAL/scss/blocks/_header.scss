@@ -3,8 +3,8 @@
 .container-header {
   position: relative;
   z-index: 10;
-  background-color: var(--poderjudicial-color-primary);
-  background-image: $poderjudicial-header-grad;
+  background-color: var(--ecotarcoles-color-primary);
+  background-image: $ecotarcoles-header-grad;
   box-shadow: 0 5px 5px hsla(0, 0%, 0%, .03) inset;
 
   @include media-breakpoint-down(lg) {
@@ -12,12 +12,12 @@
   }
 
   .grid-child {
-    padding: $poderjudicial-grid-gutter * .5;
+    padding: $ecotarcoles-grid-gutter * .5;
   }
 
   nav {
     padding: 0;
-    margin-top: $poderjudicial-grid-gutter * .5;
+    margin-top: $ecotarcoles-grid-gutter * .5;
   }
 
   .site-description {
@@ -46,12 +46,12 @@
   .container-nav {
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: $poderjudicial-grid-gutter;
+    padding-bottom: $ecotarcoles-grid-gutter;
 
     @include media-breakpoint-down(md) {
       .container-search,
       nav {
-        margin-top: $poderjudicial-grid-gutter;
+        margin-top: $ecotarcoles-grid-gutter;
       }
     }
 
@@ -210,7 +210,7 @@
   }
 
   .container-search {
-    margin-top: $poderjudicial-grid-gutter * .5;
+    margin-top: $ecotarcoles-grid-gutter * .5;
   }
 
   .mod-finder {

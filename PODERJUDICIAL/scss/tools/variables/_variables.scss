@@ -1,11 +1,11 @@
 // Global
-$poderjudicial-container-main-bg:        hsl(0, 0%, 95%) !default;
-$poderjudicial-border-color:             hsl(210, 14%, 89%) !default;
-$poderjudicial-box-shadow:               1px 1px 4px hsla(0, 0%, 0%, .1) !default;
-$poderjudicial-block-header-bg:          hsl(0, 0%, 96%) !default;
-$poderjudicial-header-grad:              linear-gradient(135deg, var(--poderjudicial-color-primary) 0%, var(--poderjudicial-color-hover) 100%) !default;
-$poderjudicial-header-grad-rtl:          linear-gradient(135deg, var(--poderjudicial-color-hover) 0%, var(--poderjudicial-color-primary) 100%) !default;
-$poderjudicial-inverted-text-color:      var(--poderjudicial-color-hover) !default;
+$ecotarcoles-container-main-bg:        hsl(0, 0%, 95%) !default;
+$ecotarcoles-border-color:             hsl(210, 14%, 89%) !default;
+$ecotarcoles-box-shadow:               1px 1px 4px hsla(0, 0%, 0%, .1) !default;
+$ecotarcoles-block-header-bg:          hsl(0, 0%, 96%) !default;
+$ecotarcoles-header-grad:              linear-gradient(135deg, var(--ecotarcoles-color-primary) 0%, var(--ecotarcoles-color-hover) 100%) !default;
+$ecotarcoles-header-grad-rtl:          linear-gradient(135deg, var(--ecotarcoles-color-hover) 0%, var(--ecotarcoles-color-primary) 100%) !default;
+$ecotarcoles-inverted-text-color:      var(--ecotarcoles-color-hover) !default;
 
 // Remove prefix added in BS5 for compat with Joomla beta's shipped with Betas
 $variable-prefix:                     "" !default;
@@ -71,7 +71,7 @@ $colors: (
   "white":                            $white
 ) !default;
 
-$primary:                             var(--poderjudicial-color-primary) !default;
+$primary:                             var(--ecotarcoles-color-primary) !default;
 $primaryBS:                           $blue !default;
 $secondary:                           $gray-600 !default;
 $success:                             $green !default;
@@ -136,15 +136,15 @@ $colors: (
 ) !default;
 
 // Links
-$link-color:                          var(--poderjudicial-color-link) !default;
-$link-hover-color:                    var(--poderjudicial-color-hover) !default;
+$link-color:                          var(--ecotarcoles-color-link) !default;
+$link-hover-color:                    var(--ecotarcoles-color-hover) !default;
 
 // Breadcrumbs
 $breadcrumb-active-color:             $gray-700 !default;
 
 // Grid columns
 $grid-gutter-width:                   1em !default;
-$poderjudicial-grid-gutter:              $grid-gutter-width !default;
+$ecotarcoles-grid-gutter:              $grid-gutter-width !default;
 
 // Components
 $fa-font-path:                        "../../../media/vendor/fontawesome-free/webfonts" !default;
@@ -156,11 +156,11 @@ $treeselect-line-height:              2.2rem !default;
 $metismenu:                           true !default;
 
 // Toolbar
-$poderjudicial-toolbar-line-height:      1.8rem !default;
+$ecotarcoles-toolbar-line-height:      1.8rem !default;
 
 // Typography
 $font-family-sans-serif:             -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-base:                    var(--poderjudicial-font-family-body, $font-family-sans-serif) !default;
+$font-family-base:                    var(--ecotarcoles-font-family-body, $font-family-sans-serif) !default;
 
 // Icons
 $jicon-css-prefix:                    icon !default;
@@ -190,7 +190,7 @@ $input-btn-padding-x:                 1rem !default;
 $input-max-width:                     100% !default;
 $input-focus-border-color:            tint-color($standard-color-primary, 50%) !default;
 
-$poderjudicial-input-focus-shadow:       0 0 0 .2rem hsla(0, 0%, 0%, .1) !default;
+$ecotarcoles-input-focus-shadow:       0 0 0 .2rem hsla(0, 0%, 0%, .1) !default;
 
 $form-select-indicator-padding:     3rem !default;
 $form-select-bg:                    $gray-200 !default;
@@ -225,20 +225,20 @@ $zindex-mobile-menu:                  9000 !default;
 $nav-link-padding-y:                  .5rem !default;
 
 // Navs
-$poderjudicial-tabs-header-bg:           $poderjudicial-block-header-bg !default;
-$poderjudicial-tabs-active-bg:           hsla(0, 0%, 0%, .3) !default;
-$poderjudicial-tabs-active-highlight:    $primaryBS !default;
+$ecotarcoles-tabs-header-bg:           $ecotarcoles-block-header-bg !default;
+$ecotarcoles-tabs-active-bg:           hsla(0, 0%, 0%, .3) !default;
+$ecotarcoles-tabs-active-highlight:    $primaryBS !default;
 
 // Navbar
 $nav-link-height:                     1.5rem + $nav-link-padding-y * 2 !default;
 
 // Cards
-$poderjudicial-card-title-bg:            $poderjudicial-block-header-bg !default;
-$poderjudicial-card-title-icon-bg:       $poderjudicial-block-header-bg !default;
-$poderjudicial-card-title-icon-bg-hover: scale-color($poderjudicial-card-title-bg, $lightness: 2%) !default;
+$ecotarcoles-card-title-bg:            $ecotarcoles-block-header-bg !default;
+$ecotarcoles-card-title-icon-bg:       $ecotarcoles-block-header-bg !default;
+$ecotarcoles-card-title-icon-bg-hover: scale-color($ecotarcoles-card-title-bg, $lightness: 2%) !default;
 $card-bg-color-light:                 $gray-100 !default;
-$card-bg-color-dark:                  var(--poderjudicial-color-primary) !default;
-$card-border-color:                   $poderjudicial-border-color !default;
+$card-bg-color-dark:                  var(--ecotarcoles-color-primary) !default;
+$card-border-color:                   $ecotarcoles-border-color !default;
 
 // Badges
 $badge-default-bg:                    $gray-600 !default;

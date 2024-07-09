@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="template" client="site">
-	<name>poderjudicial</name>
+	<name>ecotarcoles</name>
 	<version>2.8</version>
 	<creationDate>03-2023</creationDate>
 	<author>ARWEB</author>
 	<authorEmail>soporte@arweb.com</authorEmail>
 	<copyright>(C) ©2023 - ARWEB Agencia DIgital - Todos los derechos reservados. </copyright>
-	<description>TPL_PODERJUDICIAL_XML_DESCRIPTION</description>
+	<description>TPL_ECOTARCOLES_XML_DESCRIPTION</description>
 	<inheritable>2</inheritable>
 	<files>
 		<filename>component.php</filename>
@@ -20,7 +20,7 @@
 		<folder>custom_js</folder>
 		<folder>img</folder>
 	</files>
-	<media destination="templates/site/poderjudicial" folder="media">
+	<media destination="templates/site/ecotarcoles" folder="media">
 		<folder>js</folder>
 		<folder>css</folder>
 		<folder>scss</folder>
@@ -45,8 +45,8 @@
 		<position>debug</position>
 	</positions>
 	<languages folder="language">
-		<language tag="en-GB">en-GB/tpl_poderjudicial.ini</language>
-		<language tag="en-GB">en-GB/tpl_poderjudicial.sys.ini</language>
+		<language tag="en-GB">en-GB/tpl_ecotarcoles.ini</language>
+		<language tag="en-GB">en-GB/tpl_ecotarcoles.sys.ini</language>
 	</languages>
 	<config>
 		<fields name="params">
@@ -54,7 +54,7 @@
 				<field
 					name="brand"
 					type="radio"
-					label="TPL_PODERJUDICIAL_BRAND_LABEL"
+					label="TPL_ECOTARCOLES_BRAND_LABEL"
 					default="1"
 					layout="joomla.form.field.radio.switcher"
 					filter="boolean"
@@ -67,7 +67,7 @@
 					name="logoFile"
 					type="media"
 					default=""
-					label="TPL_PODERJUDICIAL_LOGO_LABEL"
+					label="TPL_ECOTARCOLES_LOGO_LABEL"
 					showon="brand:1"
 				/>
 
@@ -75,7 +75,7 @@
 					name="siteTitle"
 					type="text"
 					default=""
-					label="TPL_PODERJUDICIAL_TITLE"
+					label="TPL_ECOTARCOLES_TITLE"
 					filter="string"
 					showon="brand:1"
 				/>
@@ -84,8 +84,8 @@
 					name="siteDescription"
 					type="text"
 					default=""
-					label="TPL_PODERJUDICIAL_TAGLINE_LABEL"
-					description="TPL_PODERJUDICIAL_TAGLINE_DESC"
+					label="TPL_ECOTARCOLES_TAGLINE_LABEL"
+					description="TPL_ECOTARCOLES_TAGLINE_DESC"
 					filter="string"
 					showon="brand:1"
 				/>
@@ -93,14 +93,14 @@
 				<field
 					name="useFontScheme"
 					type="groupedlist"
-					label="TPL_PODERJUDICIAL_FONT_LABEL"
+					label="TPL_ECOTARCOLES_FONT_LABEL"
 					default="0"
 					>
 					<option value="0">JNONE</option>
-					<group label="TPL_PODERJUDICIAL_FONT_GROUP_LOCAL">
-						<option value="media/templates/site/poderjudicial/css/global/fonts-local_roboto.css">Roboto (local)</option>
+					<group label="TPL_ECOTARCOLES_FONT_GROUP_LOCAL">
+						<option value="media/templates/site/ecotarcoles/css/global/fonts-local_roboto.css">Roboto (local)</option>
 					</group>
-					<group label="TPL_PODERJUDICIAL_FONT_GROUP_WEB">
+					<group label="TPL_ECOTARCOLES_FONT_GROUP_WEB">
 						<option value="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;700&amp;display=swap">Fira Sans (web)</option>
 						<option value="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;700&amp;family=Roboto:wght@100;300;400;700&amp;display=swap">Roboto + Noto Sans (web)</option>
 					</group>
@@ -109,25 +109,25 @@
 				<field
 					name="noteFontScheme"
 					type="note"
-					description="TPL_PODERJUDICIAL_FONT_NOTE_TEXT"
+					description="TPL_ECOTARCOLES_FONT_NOTE_TEXT"
 					class="alert alert-warning"
 				/>
 
 				<field
 					name="colorName"
 					type="filelist"
-					label="TPL_PODERJUDICIAL_COLOR_NAME_LABEL"
+					label="TPL_ECOTARCOLES_COLOR_NAME_LABEL"
 					default="colors_standard"
 					fileFilter="^custom.+[^min]\.css$"
 					exclude="^colors.+"
 					stripext="true"
 					hide_none="true"
 					hide_default="true"
-					directory="media/templates/site/poderjudicial/css/global/"
+					directory="media/templates/site/ecotarcoles/css/global/"
 					validate="options"
 					>
-					<option value="colors_standard">TPL_PODERJUDICIAL_COLOR_NAME_STANDARD</option>
-					<option value="colors_alternative">TPL_PODERJUDICIAL_COLOR_NAME_ALTERNATIVE</option>
+					<option value="colors_standard">TPL_ECOTARCOLES_COLOR_NAME_STANDARD</option>
+					<option value="colors_alternative">TPL_ECOTARCOLES_COLOR_NAME_ALTERNATIVE</option>
 				</field>
 
 				<field
@@ -135,16 +135,16 @@
 					type="radio"
 					layout="joomla.form.field.radio.switcher"
 					default="0"
-					label="TPL_PODERJUDICIAL_FLUID_LABEL"
+					label="TPL_ECOTARCOLES_FLUID_LABEL"
 					>
-					<option value="0">TPL_PODERJUDICIAL_STATIC</option>
-					<option value="1">TPL_PODERJUDICIAL_FLUID</option>
+					<option value="0">TPL_ECOTARCOLES_STATIC</option>
+					<option value="1">TPL_ECOTARCOLES_FLUID</option>
 				</field>
 
 				<field
 					name="stickyHeader"
 					type="radio"
-					label="TPL_PODERJUDICIAL_STICKY_LABEL"
+					label="TPL_ECOTARCOLES_STICKY_LABEL"
 					layout="joomla.form.field.radio.switcher"
 					default="0"
 					filter="integer"
@@ -156,7 +156,7 @@
 				<field
 					name="backTop"
 					type="radio"
-					label="TPL_PODERJUDICIAL_BACKTOTOP_LABEL"
+					label="TPL_ECOTARCOLES_BACKTOTOP_LABEL"
 					layout="joomla.form.field.radio.switcher"
 					default="0"
 					filter="integer"

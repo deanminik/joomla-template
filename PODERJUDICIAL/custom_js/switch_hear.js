@@ -26,7 +26,7 @@ jQuery(document).ready(function(){
 		jQuery('#bannerIzquierdo').mouseenter(function() {
 	    	var estado =  jQuery("#switchHear").attr("data");
 	    	if(estado == 1){
-	    		lectura("", "Descargue la APP del Poder Judicial");
+	    		lectura("", "Descargue la APP de:");
 	    	}
 	    });
 	    jQuery('#bannerDerecho').mouseenter(function() {

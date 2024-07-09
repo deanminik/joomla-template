@@ -36,14 +36,14 @@
   margin: 0;
   color: hsl(0deg, 0%, 100%);
   text-align: center;
-  background-color: var(--poderjudicial-color-primary);
-  background-image: -o-linear-gradient(315deg, var(--poderjudicial-color-primary) 0%, var(--poderjudicial-color-hover) 100%);
-  background-image: linear-gradient(135deg, var(--poderjudicial-color-primary) 0%, var(--poderjudicial-color-hover) 100%);
+  background-color: var(--ecotarcoles-color-primary);
+  background-image: -o-linear-gradient(315deg, var(--ecotarcoles-color-primary) 0%, var(--ecotarcoles-color-hover) 100%);
+  background-image: linear-gradient(135deg, var(--ecotarcoles-color-primary) 0%, var(--ecotarcoles-color-hover) 100%);
   border-radius: 5px 5px 0 0;
 }
 [dir=rtl] .header {
-  background-image: -o-linear-gradient(315deg, var(--poderjudicial-color-hover) 0%, var(--poderjudicial-color-primary) 100%);
-  background-image: linear-gradient(135deg, var(--poderjudicial-color-hover) 0%, var(--poderjudicial-color-primary) 100%);
+  background-image: -o-linear-gradient(315deg, var(--ecotarcoles-color-hover) 0%, var(--ecotarcoles-color-primary) 100%);
+  background-image: linear-gradient(135deg, var(--ecotarcoles-color-hover) 0%, var(--ecotarcoles-color-primary) 100%);
 }
 
 .login {

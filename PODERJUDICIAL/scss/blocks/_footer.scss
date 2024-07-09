@@ -1,15 +1,15 @@
 // Footer
 
 .footer {
-  margin-top: $poderjudicial-grid-gutter;
+  margin-top: $ecotarcoles-grid-gutter;
   color: $white;
-  background-color: var(--poderjudicial-color-primary);
-  background-image: $poderjudicial-header-grad;
+  background-color: var(--ecotarcoles-color-primary);
+  background-image: $ecotarcoles-header-grad;
 
   .grid-child {
     align-items: center;
     justify-content: space-between;
-    padding: 2.5rem ($poderjudicial-grid-gutter * .5);
+    padding: 2.5rem ($ecotarcoles-grid-gutter * .5);
   }
 
   a {
@@ -17,7 +17,7 @@
   }
 
   [dir=rtl] & {
-    background-image: $poderjudicial-header-grad-rtl;
+    background-image: $ecotarcoles-header-grad-rtl;
   }
 
   .mod-menu {
@@ -27,7 +27,7 @@
   @if $metismenu==true {
     .metismenu.mod-menu {
       .mm-collapse {
-        background: var(--poderjudicial-color-primary);
+        background: var(--ecotarcoles-color-primary);
       }
     }
   }

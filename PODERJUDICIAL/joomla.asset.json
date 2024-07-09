@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
-  "name": "poderjudicial",
+  "name": "ecotarcoles",
   "version": "4.0.0",
-  "description": "This file contains details of the assets used by poderjudicial, the default Joomla 4 site template.",
+  "description": "This file contains details of the assets used by ecotarcoles, the default Joomla 4 site template.",
   "license": "GPL-2.0-or-later",
   "assets": [
     {
-      "name": "template.poderjudicial.ltr",
+      "name": "template.ecotarcoles.ltr",
       "description": "The css file to be used when the site is left to right (LTR).",
       "type": "style",
       "uri": "template.min.css",
@@ -15,7 +15,7 @@
       ]
     },
     {
-      "name": "template.poderjudicial.rtl",
+      "name": "template.ecotarcoles.rtl",
       "description": "The css file to be used when the site is right to left (RTL).",
       "type": "style",
       "uri": "template-rtl.min.css",
@@ -51,7 +51,7 @@
       ]
     },
     {
-      "name": "template.poderjudicial",
+      "name": "template.ecotarcoles",
       "description": "The file containing the javascript for this template.",
       "type": "script",
       "uri": "template.js",
@@ -68,7 +68,7 @@
       "type": "script",
       "uri": "",
       "dependencies": [
-        "template.poderjudicial"
+        "template.ecotarcoles"
       ]
     },
     {
@@ -81,19 +81,19 @@
       ]
     },
     {
-      "name": "template.poderjudicial.ltr",
+      "name": "template.ecotarcoles.ltr",
       "type": "preset",
       "dependencies": [
-        "template.poderjudicial.ltr#style",
-        "template.poderjudicial#script"
+        "template.ecotarcoles.ltr#style",
+        "template.ecotarcoles#script"
       ]
     },
     {
-      "name": "template.poderjudicial.rtl",
+      "name": "template.ecotarcoles.rtl",
       "type": "preset",
       "dependencies": [
-        "template.poderjudicial.rtl#style",
-        "template.poderjudicial#script"
+        "template.ecotarcoles.rtl#style",
+        "template.ecotarcoles#script"
       ]
     },
     {

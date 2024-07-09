@@ -1,0 +1,8 @@
+// Variables, Functions and Mixins
+@import "../tools/tools";
+
+:root {
+  --poderjudicial-color-primary: #{$standard-color-primary};
+  --poderjudicial-color-link: #{$standard-color-link};
+  --poderjudicial-color-hover: #{$standard-color-hover};
+}

@@ -5,3 +5,6 @@ to see the difference when you want to adopt a company, in this case, Ecotarcole
 ## How to implement a template to Joomla
 
 Download the complete project, change the name of the folder and then zip it, and finally install it inside Joomla.
+
+
+## See the video on Google Drive
